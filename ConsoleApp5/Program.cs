@@ -64,8 +64,8 @@ namespace ConsoleApp5
 
         public Counter(int min,int max)
         {
-            this.min = min;
-            this.max = max;
+            min = min;
+            max = max;
             current = min;
         }
 
