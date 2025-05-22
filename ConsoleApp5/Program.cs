@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Channels;
 
 namespace ConsoleApp5
@@ -12,7 +12,7 @@ namespace ConsoleApp5
             Point p1 = new Point();
             p1.ShowData();
 
-            Point p2 = new Point(1,2);
+            Point p2 = new Point(1, 2);
             p2.ShowData();
 
             Point p3 = new Point(3, 4);
@@ -42,7 +42,7 @@ namespace ConsoleApp5
             Y = 0;
         }
 
-        public Point(int x ,int y)
+        public Point(int x, int y)
         {
             X = x;
             Y = y;
@@ -52,7 +52,7 @@ namespace ConsoleApp5
         {
             Console.WriteLine($"({X},{Y})");
         }
-        
+
     }
 
 
@@ -62,10 +62,10 @@ namespace ConsoleApp5
         int max;
         int current;
 
-        public Counter(int min,int max)
+        public Counter(int min, int max)
         {
-            min = min;
-            max = max;
+            this.min = min;
+            this.max = max;
             current = min;
         }
 
